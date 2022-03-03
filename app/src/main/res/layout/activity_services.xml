@@ -23,9 +23,28 @@
                 android:text="Expediente"
                 android:icon="@drawable/ic_file24"/>
 
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tbServicios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Servicios"
+                android:icon="@drawable/ic_service24"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tbResgistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registros"
+                android:icon="@drawable/ic_baseline_receipt_24"/>
+
         </com.google.android.material.tabs.TabLayout>
 
-
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewControl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.viewpager.widget.ViewPager>
 
     </LinearLayout>
 </RelativeLayout>
