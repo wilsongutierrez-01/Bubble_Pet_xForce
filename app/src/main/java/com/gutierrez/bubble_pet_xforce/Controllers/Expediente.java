@@ -7,7 +7,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.gutierrez.bubble_pet_xforce.R;
 
 /**
@@ -16,6 +18,17 @@ import com.gutierrez.bubble_pet_xforce.R;
  * create an instance of this fragment.
  */
 public class Expediente extends Fragment {
+
+    //My variables *********//
+   private Button btnSalir;
+    FirebaseAuth mAuth;
+
+
+
+    //******************************************************//
+    //Fragment logic//
+    //******************************************************//
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -39,6 +52,9 @@ public class Expediente extends Fragment {
      * @return A new instance of fragment Expediente.
      */
     // TODO: Rename and change types and number of parameters
+
+    //********************************************************//
+
     public static Expediente newInstance(String param1, String param2) {
         Expediente fragment = new Expediente();
         Bundle args = new Bundle();
@@ -55,6 +71,7 @@ public class Expediente extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override

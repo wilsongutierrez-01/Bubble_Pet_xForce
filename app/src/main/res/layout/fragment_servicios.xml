@@ -5,10 +5,102 @@
     android:layout_height="match_parent"
     tools:context=".Controllers.Servicios">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!-- TODO: Crear interfaz  -->
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lbTittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Servicios:"
+                android:textSize="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"/>
+
+            <CheckBox
+                android:id="@+id/chbShower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Baños antipulgas"
+                android:textSize="18dp"
+                android:layout_below="@+id/lbTittle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"/>
+
+
+            <CheckBox
+                android:id="@+id/chbHair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Corte de cabello"
+                android:textSize="18dp"
+                android:layout_below="@+id/chbShower"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"/>
+
+
+            <CheckBox
+                android:id="@+id/chbBrush"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cepillado de dientes"
+                android:textSize="18dp"
+                android:layout_below="@+id/chbHair"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"/>
+
+
+            <CheckBox
+                android:id="@+id/chbEtologia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Etología"
+                android:textSize="18dp"
+                android:layout_below="@+id/chbBrush"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"/>
+
+
+            <CheckBox
+                android:id="@+id/chbCirujia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cirujia"
+                android:textSize="18dp"
+                android:layout_below="@+id/chbEtologia"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"/>
+
+
+            <CheckBox
+                android:id="@+id/chbInternMedicine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medicina Interna"
+                android:textSize="18dp"
+                android:layout_below="@+id/chbCirujia"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/btnCita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reservar cita"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/chbInternMedicine"
+                android:layout_marginTop="20dp"/>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
 
 </FrameLayout>

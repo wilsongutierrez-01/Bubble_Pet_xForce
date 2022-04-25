@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bubble_Pet_xForce">
         <activity
+            android:name=".SingOut"
+            android:exported="false" />
+        <activity
+            android:name=".SingIn"
+            android:exported="false" />
+        <activity
             android:name=".Services"
             android:exported="false" />
         <!--

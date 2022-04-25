@@ -26,6 +26,27 @@
         android:text="@string/steps"
         android:textSize="17dp" />
 
+    <EditText
+        android:id="@+id/edCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo"
+        android:layout_below="@id/btnnext"/>
+
+    <EditText
+        android:id="@+id/edContra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edCorreo"
+        android:hint="contraseña"/>
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edContra"
+        android:layout_marginTop="20dp"
+        android:hint="nombre"/>
     <Button
         android:id="@+id/btnnext"
         android:layout_width="wrap_content"
@@ -34,6 +55,22 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/txtIndicacion"
         android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/edTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edContra"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnSingIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tengo cuenta"
+        android:layout_below="@+id/edName"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
 
 
 </RelativeLayout>
